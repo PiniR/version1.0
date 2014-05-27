@@ -11,9 +11,19 @@
    
 
         <script src="app-teacher.js"></script>
-       
+		<script src="../../components/school/school.js"></script>
+        <script src="../components/session/a/sessionTeacher.js"></script>
     </head>
     <body>
-        <div data-ui-view="main" style="height: 100%;"></div>		
+        <div data-ui-view="noMainNo" style="height: 170%;"></div>	
+
+			 <div class="slider_value_item">
+                    <div id="slider_val_20" class="slider_circle slider_circel_background" data-ng-class="{'slider_circel_background_blue':slideVal==2}"></div>
+                    <div class="slider_num_blue">02</div>
+                </div>
+                <div class="slider_value_item">
+                    <div id="slider_val_30" class="slider_circle slider_circel_background" data-ng-class="{'slider_circel_background_blue':slideVal==3}"></div>
+                    <div class="slider_num_blue">03</div>
+                </div>
     </body>
 </html>

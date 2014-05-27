@@ -1,0 +1,15 @@
+<section class="resaults_panel play_panel_move" data-ng-init='open=1' data-ng-style='{"height":(open?50:90)+"%"}'>
+	
+	<div class="teacher_instructions" data-ng-show="studentId()=='0'" style='height: auto;' >
+		<div class="up_arrow"></div>
+		<span translate="Student_answer">Click on students names above to view each student answer</span>		
+	</div>
+	
+	<div data-ui-view="answContent" data-ng-show="studentId()!='0'">
+		
+		
+	</div>
+
+		
+		
+</section>
