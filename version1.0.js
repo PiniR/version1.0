@@ -9,13 +9,12 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
    
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
 
-                <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
-
+        <script src="app-teacher.js"></script>
+		<script src="../../components/school/school.js"></script>
+        <script src="../components/session/sessionTeacher.js"></script>
     </head>
     <body>
-      
-               
+        <div data-ui-view="main" style="height: 100%;"></div>		
     </body>
 </html>
