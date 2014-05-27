@@ -8,16 +8,26 @@ smartClassApp.config(function ($stateProvider, $urlRouterProvider) {
 		.state('school', {
 		    url: "/:schoolId",
 		    views: {
-		        "main": {
+		        "noMainNo": {
 		            templateUrl: "../../components/school/school.html",
 		            controller: "school"
 		        }
 		    }
 		})
 		.state('session', {
-		    url: '/:schoolId/session',
+		    url: '/:school/session',
 		    views: {
-		        'main': {
+		        'noMainNo': {
+		            templateUrl: '../components/session/session.html',
+		            controller: "session"
+		        }
+		    }
+
+		})
+		.state('station', {
+		    url: '/:stationId/station',
+		    views: {
+		        'noMainNo': {
 		            templateUrl: '../components/session/sessionTeacher.html',
 		            controller: "sessionTeacher"
 		        }
@@ -26,3 +36,11 @@ smartClassApp.config(function ($stateProvider, $urlRouterProvider) {
 		})
         
 });
+
+
+smartClassApp.controller('preview', ['$scope', 'lessonData','$stateParams',function ($scope, lessonData,$stateParams) {
+
+	$scope.slidesList = lessonData.getLesson;
+	$scope.slideIndex = $stateParams.slideIndex-1;
+
+} ]);
