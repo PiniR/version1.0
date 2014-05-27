@@ -13,7 +13,6 @@
         <script src="app-teacher.js"></script>
 		<script src="../../components/school/school.js"></script>
         <script src="../components/session/sessionTeacher.js"></script>
-		
     </head>
     <body>
         <div data-ui-view="main" style="height: 100%;"></div>		
